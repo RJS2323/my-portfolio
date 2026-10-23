@@ -1,14 +1,17 @@
 body { 
         margin: 0;
+        min-height: 100vh;
         background: #242933;
         background-image: radial-gradient(
-                circle at right center,
-                rgba(255, 30, 60, 0.65),
-                transparent 60%
+                ellipse at 85% 35%,
+                rgba(255, 30, 60, 0.35),
+                transparent 55%
             );
         color: white;
         font-family: Arial, sans-serif;
+        background-repeat: no-repeat;
      }
+     
 
 header {
         display: flex;
@@ -23,6 +26,7 @@ h1  {
        color: #e5e7eb;
        font-size: 48px;
        transition: color 0.3s ease;
+       letter-spacing: 2px;
      } 
 
 nav {
@@ -41,9 +45,22 @@ nav a {
       }
 
 nav a:hover {
-        color: #ff626f;
-      }
+             color: #ff626f;
+            }
 
 h1:hover {
-        color: #e46767;
+           color: #e46767;
+         }
+
+.hero {
+        text-align: center;
+        margin-top: 100px;
       }
+
+.intro {
+        max-width: 600px;
+        margin: 20px auto;
+        line-height: 1.6;
+        text-align:center;
+}
+
