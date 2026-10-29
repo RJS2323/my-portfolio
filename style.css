@@ -1,11 +1,20 @@
+:root {
+  --color-bg: #0b0c0e;
+  --color-surface: #17191d;
+  --color-silver: #c5c7cb;
+  --color-gold: #c5a15a;
+  --color-text: #f2f0ea;
+  --color-muted: #9b9da3;
+}
+
 body 
 { 
         margin: 0;
         min-height: 100vh;
-        background: #242933;
+        background: var(--color-bg);
         background-image: radial-gradient(
                 ellipse at 50% 45%,
-                rgba(255, 30, 60, 0.45),
+                rgba(197, 161, 90, 0.25),
                 transparent 55%
             );
         color: white;
@@ -22,22 +31,22 @@ header
 h1  
 {    
        margin-top: 100px;
-       text-align: center;
+       text-align: left;
        color: #e5e7eb;
-       font-size: 48px;
+       font-size: 67px;
        transition: color 0.3s ease;
        letter-spacing: 2px;  
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-family: 'Inter', sans-serif;
 } 
 
 h2
 {
        margin-top: 35px;
-       text-align: center;
+       text-align: left;
        color: #e5e7eb;
-       font-size: 25px;
+       font-size: 35px;
        letter-spacing: 1px;        
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-family: 'Inter', sans-serif;
 
 }
 
@@ -77,8 +86,38 @@ h1:hover
 
 .hero 
 {
+        width: calc(100% - 70px);
+        max-width: 1600px;
+        margin: 100px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 100px;
         text-align: center;
-        margin-top: 100px;
+        
+        padding: 0 35px;
+}
+
+.hero-visual
+{
+  flex: 1 1 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.orbital-image 
+{
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+ 
+}
+
+.hero-content
+{
+  flex: 0 1 45%;
+  text-align: left;
 }
 
 .intro 
@@ -86,18 +125,18 @@ h1:hover
         max-width: 600px;
         margin: 20px auto;
         line-height: 1.6;
-        text-align:center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        font-family: 'Inter', sans-serif;
 }
 
 .hero-buttons 
 {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 15px;
   margin-top: 32px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn
