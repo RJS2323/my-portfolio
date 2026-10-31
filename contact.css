@@ -1,11 +1,8 @@
-body
-{
+body {
   background-color: #c9d4df;
-
 }
 
-header
-{
+header {
   margin: 8px;
   display: flex;
   padding: 12px 24px;
@@ -14,16 +11,14 @@ header
   border-radius: 20px;
 }
 
-nav
-{
+nav {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
   padding: 5px 1px;
 }
 
-nav a
-{
+nav a {
   color: #080808;
   text-decoration: none;
   font-size: 15px;
@@ -31,108 +26,93 @@ nav a
   border: 1px solid rgba(83, 84, 85, 0.3);
   border-radius: 6px;
   transition: color 0.3s ease;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 100;
 }
 
-nav a:hover
-{
+nav a:hover {
   color: #474545;
-  border-color:#363535;
+  border-color: #363535;
 }
 
-#contact
-{
+#contact {
   max-width: 1000px;
   margin: 12px 12px;
   padding: 35px;
-  font-family:  'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
 
-.contact-method
-{
- background-color: rgb(235, 233, 252);
- border: 1px solid #b7c3da;
- padding: 15px 20px;
- border-radius: 10px;
- margin-bottom: 15px;
+.contact-method {
+  background-color: rgb(235, 233, 252);
+  border: 1px solid #b7c3da;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.contact-method a
-{
+.contact-method a {
   color: #a64f50;
   text-decoration: none;
   font-weight: 100;
 }
 
-.contact-direct
-{
+.contact-direct {
   flex: 1;
 }
 
-.contact-form
-{
+.contact-form {
   flex: 1;
 }
 
-.contact-layout
-{
-  
+.contact-layout {
   display: flex;
   gap: 30px;
 }
 
-form
-{
+form {
   display: flex;
   flex-direction: column;
 }
 
-input, textarea
-{
+input,
+textarea {
   background-color: rgb(235, 233, 252);
   padding: 6px 10px;
   border-radius: 8px;
   border-style: none;
 }
 
-label
-{
-  font-family: 'Caveat', cursive;
+label {
+  font-family: "Caveat", cursive;
   font-weight: 500;
 }
 
-h3
-{
-  font-family: 'Caveat', cursive;
+h3 {
+  font-family: "Caveat", cursive;
 }
 
-button
-{
+button {
   background-color: #f9aaac;
   border-style: none;
   margin-top: 10px;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   max-width: 150px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
 }
 
-button:hover
-{
- color: #f3dcde;
- 
- background-color: #a64f50;
+button:hover {
+  color: #f3dcde;
+
+  background-color: #a64f50;
 }
 
-@media (max-width: 600px)
-{
-  .contact-layout
-  {
+@media (max-width: 600px) {
+  .contact-layout {
     flex-direction: column;
   }
 }
-
