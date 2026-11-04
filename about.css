@@ -1,0 +1,84 @@
+:root {
+  --color-bg: #0b0c0e;
+  --color-surface: #17191d;
+  --color-silver: #c5c7cb;
+  --color-gold: #c5a15a;
+  --color-text: #f2f0ea;
+  --color-muted: #9b9da3;
+  --color-accent: #2d2d2e;
+}
+
+header {
+  padding: 15px 40px;
+  background: var(--color-accent);
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 5px 20px;
+}
+
+nav a {
+  color: var(--color-silver);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 9px 12px;
+  border: 1px solid var(--color-silver);
+  border-radius: 6px;
+  transition: color 0.3s ease;
+  font-family: "Caveat", cursive;
+  font-weight: 100;
+}
+
+nav a:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: radial-gradient(
+    ellipse at 50% 45%,
+    rgba(197, 161, 90, 0.25),
+    transparent 55%
+  );
+  background-repeat: no-repeat;
+}
+
+h4 {
+  color: var(--color-gold);
+  font-family: "Caveat", cursive;
+}
+
+h2 {
+  color: var(--color-silver);
+  font-family: "Caveat", cursive;
+}
+
+h2:hover {
+  color: var(--color-gold);
+}
+
+.about {
+  background-image: url("Images/Golden Compass Anchor Emblem.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+  background-position: right 5% center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  gap: 20px;
+  background-size: clamp(280px, 35vw, 550px);
+  max-width: none;
+  margin: 12px 0px;
+  padding: 20px;
+  color: var(--color-silver);
+  font-family: "Caveat", cursive;
+}

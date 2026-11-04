@@ -93,6 +93,7 @@ h1:hover {
     url("Images/Golden Rings Over a Shadowed Planet.png");
 
   min-height: calc(100vh - 115px);
+  mix-blend-mode: screen;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center right;
