@@ -1,5 +1,20 @@
+:root {
+  --color-bg: #0b0c0e;
+  --color-surface: #17191d;
+  --color-silver: #c5c7cb;
+  --color-gold: #c5a15a;
+  --color-text: #f2f0ea;
+  --color-muted: #9b9da3;
+}
+
 body {
-  background-color: #c9d4df;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(
+    ellipse at 50% 45%,
+    rgba(197, 161, 90, 0.25),
+    transparent 55%
+  );
+  background-repeat: no-repeat;
 }
 
 header {
@@ -7,7 +22,7 @@ header {
   display: flex;
   padding: 12px 24px;
   align-items: center;
-  background-color: #b7c3da;
+  background-color: var(--color-surface);
   border-radius: 20px;
 }
 
@@ -19,11 +34,11 @@ nav {
 }
 
 nav a {
-  color: #080808;
+  color: var(--color-silver);
   text-decoration: none;
   font-size: 15px;
   padding: 9px 12px;
-  border: 1px solid rgba(83, 84, 85, 0.3);
+  border: 1px solid var(--color-silver);
   border-radius: 6px;
   transition: color 0.3s ease;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -31,11 +46,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #474545;
-  border-color: #363535;
+  color: var(--color-gold);
+  border-color: var(--color-gold);
 }
 
 #contact {
+  color: var(--color-silver);
   max-width: 1000px;
   margin: 12px 12px;
   padding: 35px;
@@ -43,15 +59,15 @@ nav a:hover {
 }
 
 .contact-method {
-  background-color: rgb(235, 233, 252);
-  border: 1px solid #b7c3da;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-silver);
   padding: 15px 20px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
 .contact-method a {
-  color: #a64f50;
+  color: var(--color-gold);
   text-decoration: none;
   font-weight: 100;
 }
@@ -83,18 +99,20 @@ textarea {
 }
 
 label {
+  color: var(--color-silver);
   font-family: "Caveat", cursive;
   font-weight: 500;
 }
 
 h3 {
+  color: var(--color-gold);
   font-family: "Caveat", cursive;
 }
 
 button {
-  background-color: #f9aaac;
+  background-color: var(--color-silver);
   border-style: none;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -106,9 +124,8 @@ button {
 }
 
 button:hover {
-  color: #f3dcde;
-
-  background-color: #a64f50;
+  color: var(--color-gold);
+  background-color: var(--color-surface);
 }
 
 @media (max-width: 600px) {
