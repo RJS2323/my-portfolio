@@ -1,0 +1,119 @@
+:root {
+  --color-bg: #0b0c0e;
+  --color-surface: #17191d;
+  --color-silver: #c5c7cb;
+  --color-gold: #c5a15a;
+  --color-text: #f2f0ea;
+  --color-muted: #9b9da3;
+  --color-accent: #2d2d2e;
+}
+
+header {
+  padding: 15px 40px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 5px 20px;
+}
+
+nav a {
+  color: var(--color-silver);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 9px 12px;
+  border: 1px solid var(--color-silver);
+  border-radius: 6px;
+  transition: color 0.3s ease;
+  font-family: "Caveat", cursive;
+  font-weight: 100;
+}
+
+nav a:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  background-image: radial-gradient(
+    ellipse at 50% 45%,
+    rgba(197, 161, 90, 0.25),
+    transparent 55%
+  );
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: left;
+  color: #e5e7eb;
+  font-size: 67px;
+  transition: color 0.3s ease;
+  letter-spacing: 2px;
+  font-family: "Inter", sans-serif;
+}
+
+#skills {
+  background-image:
+    linear-gradient(to bottom, var(--color-bg) 0%, transparent 20%),
+    linear-gradient(
+      to right,
+      var(--color-bg) 0%,
+      rgba(11, 12, 14, 0.75) 35%,
+      transparent 75%
+    ),
+    url("images/Golden\ Constellation\ Orbit\ in\ Deep\ Space.png");
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 60px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center right;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  padding: 0 35px;
+  box-sizing: border-box;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-accent);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.skill-level {
+  height: 100%;
+  background-color: var(--color-gold);
+  border-radius: 20px;
+}
