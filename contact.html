@@ -1,62 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="contact.css">
-          <title>Lefter's Portfolio</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Lefter's Portfolio</title>
+  </head>
 
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
-            
-        </header>
-           <main>
-                <section id="contact">
-                    <h2>Contact Me</h2>
-                   <p> 
-                    Welcome To My Contact Page.
-                    Want to get in touch? You can reach me via email or by Phone.
-                   </p>
-                    <div class="contact-layout">
-                        <div class="contact-direct">
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
 
-                                <h3>Get In Touch</h3>
+        <a href="skills.html">Skills</a>
 
-                                <div class="contact-method">
-                                <h4>Email</h4>
-                                <a href="mailto:LefterPetrovski596@gmail.com">LefterPetrovski596@gmail.com</a>
-                                </div>
+        <a href="projects.html">Projects</a>
 
-                                <div class="contact-method">
-                                <h4>Phone</h4>
-                                <a href="tel:+4917670070452">+49 17670070452</a>
-                                </div>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+    <main>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Welcome To My Contact Page. Want to get in touch? You can reach me via
+          email or by Phone.
+        </p>
+        <div class="contact-layout">
+          <div class="contact-direct">
+            <h3>Get In Touch</h3>
 
-                            </div>
-                            <div class="contact-form">
-                                <h3>Send a Message</h3>
+            <div class="contact-method">
+              <h4>Email</h4>
+              <a href="mailto:LefterPetrovski596@gmail.com"
+                >LefterPetrovski596@gmail.com</a
+              >
+            </div>
 
-                                <form>
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" required>
+            <div class="contact-method">
+              <h4>Phone</h4>
+              <a href="tel:+4917670070452">+49 17670070452</a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send a Message</h3>
 
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required>
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/mjywvrny"
+              method="POST"
+            >
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
 
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" required></textarea>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
 
-                                    <button type="submit">Send message</button>
-                                </form>
-                            </div>
-                    </div>
-                </section>
-            </main>
-    </body>
-            
-    
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div id="form-notification" class="notification">
+        <h3>Thank you for your message!</h3>
+        <p>Thanks for reaching out. I'll get back to you soon.</p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

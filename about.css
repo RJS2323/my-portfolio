@@ -10,12 +10,13 @@
 
 header {
   padding: 15px 40px;
-  background: var(--color-accent);
-  top: 0;
+  background: transparent;
+  position: absolute;
+  top: 15px;
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 20px;
+  z-index: 10;
 }
 
 nav {
@@ -33,8 +34,8 @@ nav a {
   border: 1px solid var(--color-silver);
   border-radius: 6px;
   transition: color 0.3s ease;
-  font-family: "Caveat", cursive;
-  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -43,6 +44,8 @@ nav a:hover {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: var(--color-bg);
   background-image: radial-gradient(
     ellipse at 50% 45%,
@@ -67,18 +70,84 @@ h2:hover {
 }
 
 .about {
-  background-image: url("images/Golden Compass Anchor Emblem.png");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image:
+    linear-gradient(to right, rgba(11, 12, 14, 0.85), rgba(11, 12, 14, 0.45)),
+    url("images/Golden Nebula Over Planetary Horizon.png");
   background-repeat: no-repeat;
   width: 100%;
   box-sizing: border-box;
-  background-position: right 5% center;
+  background-position: center;
   justify-content: flex-start;
   min-height: 100vh;
   gap: 20px;
-  background-size: clamp(280px, 35vw, 550px);
+  background-size: 100% 100%;
   max-width: none;
-  margin: 12px 0px;
+  margin: 0;
   padding: 20px;
   color: var(--color-silver);
   font-family: "Caveat", cursive;
+}
+
+.about p {
+  max-width: 600px;
+  line-height: 1.7;
+  font-size: 19px;
+  margin: 0 0 18px;
+  font-family: "Inter", sans-serif;
+  color: var(--color-silver);
+}
+
+.drives {
+  padding: 60px 40px;
+  background-color: var(--color-bg);
+  text-align: center;
+}
+
+.drives h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.drives-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.drive-card {
+  background-color: var(--color-surface);
+  border: 1px solid rgba(197, 161, 90, 0.35);
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition:
+    transform 0.3s ease,
+    boder-color 0.3s ease;
+}
+
+.drive-card h3 {
+  color: var(--color-gold);
+  font-family: "Caveat", cursive;
+  font-size: 26px;
+}
+
+.drive-card p {
+  color: var(--color-silver);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.drive-card:hover {
+  transform: translate(-5px);
+  border-color: var(--color-gold);
+}
+
+@media (max-width: 768px) {
+  .drives-container {
+    grid-template-columns: 1fr;
+  }
 }
