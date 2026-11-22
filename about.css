@@ -142,12 +142,66 @@ h2:hover {
 }
 
 .drive-card:hover {
-  transform: translate(-5px);
+  transform: translateY(-5px);
   border-color: var(--color-gold);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  header {
+    position: relative;
+    top: 0;
+    padding: 12px 10px;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 5px;
+  }
+
+  nav a {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .about {
+    min-height: auto;
+    padding: 35px 22px 50px;
+    gap: 15px;
+    background-size: cover;
+    background-position: 60% center;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .drives {
+    padding: 40px 20px;
+  }
+
+  .drives h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
   .drives-container {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .drive-card {
+    padding: 24px 18px;
+  }
+
+  .drive-card h3 {
+    font-size: 24px;
+  }
+
+  .drive-card p {
+    font-size: 14px;
   }
 }

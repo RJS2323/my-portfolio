@@ -269,16 +269,9 @@ main {
 }
 
 @media (max-width: 768px) {
-  #skills h2 {
-    font-size: 42px;
-  }
-
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   header {
-    padding: 15px;
+    position: relative;
+    padding: 12px 10px;
   }
 
   nav {
@@ -286,5 +279,42 @@ main {
     flex-wrap: wrap;
     gap: 8px;
     padding: 5px;
+  }
+
+  nav a {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  main {
+    background-size: cover;
+    background-position: 60% center;
+  }
+
+  #skills {
+    padding: 45px 22px 50px;
+  }
+
+  #skills h2 {
+    font-size: 36px;
+  }
+
+  .skills-container,
+  .exploring-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill,
+  .exploring-item {
+    padding: 22px 18px;
+  }
+
+  #exploring {
+    padding: 20px 22px 45px;
+  }
+
+  #exploring h2 {
+    font-size: 32px;
   }
 }

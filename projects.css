@@ -228,16 +228,9 @@ main {
 }
 
 @media (max-width: 768px) {
-  #projects h2 {
-    font-size: 42px;
-  }
-
-  .projects-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   header {
-    padding: 15px;
+    position: relative;
+    padding: 12px 10px;
   }
 
   nav {
@@ -245,5 +238,51 @@ main {
     flex-wrap: wrap;
     gap: 8px;
     padding: 5px;
+  }
+
+  nav a {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  main {
+    background-size: cover;
+    background-position: 60% center;
+  }
+
+  #projects {
+    padding: 45px 22px 50px;
+  }
+
+  #projects h2 {
+    font-size: 36px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project {
+    height: auto;
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project h4 {
+    font-size: 19px;
+  }
+
+  .project p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .project-footer {
+    justify-content: space-between;
   }
 }
