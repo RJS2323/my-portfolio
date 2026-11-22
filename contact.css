@@ -177,11 +177,13 @@ button:hover {
 }
 
 .notification {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.95);
   background-color: rgba(23, 25, 29, 0.85);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(197, 161, 90, 0.65);
@@ -192,10 +194,22 @@ button:hover {
   text-align: center;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    visibility 0s linear 0.35s;
+}
+
+.notification p {
+  color: var(--color-silver);
 }
 
 .notification.show {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition-delay: 0s;
 }
 
 @media (max-width: 600px) {
